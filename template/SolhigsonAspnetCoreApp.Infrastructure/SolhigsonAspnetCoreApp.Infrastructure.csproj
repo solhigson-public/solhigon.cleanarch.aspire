@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <LangVersion>12</LangVersion>
+        <Deterministic>false</Deterministic>
+        <AssemblyVersion>1.0.*</AssemblyVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\SolhigsonAspnetCoreApp.Domain\SolhigsonAspnetCoreApp.Domain.csproj"/>
+    </ItemGroup>
+
+</Project>

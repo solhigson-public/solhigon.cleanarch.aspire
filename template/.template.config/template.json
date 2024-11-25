@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Emeka Awagu",
+  "name": "Solhigson AspNet Core App",
+  "description": "An Asp.net core web application, using entity framework, nlog and autofac using repository pattern",
+  "identity": "Solhigson.AspNetCoreApp.EntityFrameworkCore.1.0",
+  "shortName": "SolhigsonAspNetCoreApp",
+  "classifications": [
+    "web",
+    "entityframework"
+  ],
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "SolhigsonAspnetCoreApp",
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "netcoreapp8.0"
+        }
+      ],
+      "defaultValue": "netcoreapp8.0"
+    }
+  }
+}

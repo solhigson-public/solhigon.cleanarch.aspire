@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\SolhigsonAspnetCoreApp.Application\SolhigsonAspnetCoreApp.Application.csproj" />
+        <ProjectReference Include="..\SolhigsonAspnetCoreApp.Infrastructure\SolhigsonAspnetCoreApp.Infrastructure.csproj" />
+        <ProjectReference Include="..\SolhigsonAspnetCoreApp.ServiceDefaults\SolhigsonAspnetCoreApp.ServiceDefaults.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="NLog.Schema" Version="5.3.4" />
+        <PackageReference Include="NLog.Targets.OpenTelemetryProtocol" Version="1.1.5" />
+        <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.14" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10" />
+    </ItemGroup>
+
+    <Target Name="solhigson" AfterTargets="AfterBuild">
+        <Exec WorkingDirectory="$(ProjectDir)" Command="dotnet tool restore"/>
+        <Exec WorkingDirectory="$(ProjectDir)" Command="dotnet solhigson-ef gen -a &quot;$(TargetDir)SolhigsonAspnetCoreApp.Infrastructure.dll&quot; -pp &quot;$(SolutionDir)SolhigsonAspnetCoreApp.Infrastructure&quot; -cp &quot;$(SolutionDir)SolhigsonAspnetCoreApp.Application&quot; -cc &quot;$(SolutionDir)SolhigsonAspnetCoreApp.Domain&quot; -tp &quot;$(SolutionDir)SolhigsonAspnetCoreApp.Tests&quot; -rn &quot;SolhigsonAspnetCoreApp&quot;"/>
+    </Target>
+</Project>

@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolhigsonAspnetCoreApp.Infrastructure", "SolhigsonAspnetCoreApp.Infrastructure\SolhigsonAspnetCoreApp.Infrastructure.csproj", "{5CAF065F-FD05-4BDB-B788-AB7A89D6404B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolhigsonAspnetCoreApp.Application", "SolhigsonAspnetCoreApp.Application\SolhigsonAspnetCoreApp.Application.csproj", "{12E724BF-45C6-4CA4-8A76-D88D19115046}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Support", "Support", "{1375EACA-DC09-4651-942A-9E887E84F050}"
+ProjectSection(SolutionItems) = preProject
+	.gitignore = .gitignore
+	.gitignore = template\.gitignore
+	.template.config\template.json = template\.template.config\template.json
+	.template.config\template.json = .template.config\template.json
+	..\.gitignore = ..\.gitignore
+	..\README.md = ..\README.md
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolhigsonAspnetCoreApp.Tests", "SolhigsonAspnetCoreApp.Tests\SolhigsonAspnetCoreApp.Tests.csproj", "{65A8A538-A2BB-451E-AE4A-0A6909057CAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolhigsonAspnetCoreApp.Domain", "SolhigsonAspnetCoreApp.Domain\SolhigsonAspnetCoreApp.Domain.csproj", "{6F0F7572-0AE5-4369-9CD0-63499E433851}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolhigsonAspnetCoreApp.ApiService", "SolhigsonAspnetCoreApp.ApiService\SolhigsonAspnetCoreApp.ApiService.csproj", "{2593D372-0BAB-4D47-9524-7B7A12719AB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolhigsonAspnetCoreApp.AppHost", "SolhigsonAspnetCoreApp.AppHost\SolhigsonAspnetCoreApp.AppHost.csproj", "{AE9564BB-A50E-4E4B-86C2-4AE65D6F30BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolhigsonAspnetCoreApp.ServiceDefaults", "SolhigsonAspnetCoreApp.ServiceDefaults\SolhigsonAspnetCoreApp.ServiceDefaults.csproj", "{CF312FAE-41A5-4264-A3D5-E147DFB79583}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aspire", "Aspire", "{A2B1C4AE-C237-460C-9FDB-6CBEEC67D9A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CAF065F-FD05-4BDB-B788-AB7A89D6404B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CAF065F-FD05-4BDB-B788-AB7A89D6404B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CAF065F-FD05-4BDB-B788-AB7A89D6404B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CAF065F-FD05-4BDB-B788-AB7A89D6404B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12E724BF-45C6-4CA4-8A76-D88D19115046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12E724BF-45C6-4CA4-8A76-D88D19115046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12E724BF-45C6-4CA4-8A76-D88D19115046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12E724BF-45C6-4CA4-8A76-D88D19115046}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A8A538-A2BB-451E-AE4A-0A6909057CAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A8A538-A2BB-451E-AE4A-0A6909057CAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A8A538-A2BB-451E-AE4A-0A6909057CAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A8A538-A2BB-451E-AE4A-0A6909057CAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F0F7572-0AE5-4369-9CD0-63499E433851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F0F7572-0AE5-4369-9CD0-63499E433851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F0F7572-0AE5-4369-9CD0-63499E433851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F0F7572-0AE5-4369-9CD0-63499E433851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2593D372-0BAB-4D47-9524-7B7A12719AB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2593D372-0BAB-4D47-9524-7B7A12719AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2593D372-0BAB-4D47-9524-7B7A12719AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2593D372-0BAB-4D47-9524-7B7A12719AB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE9564BB-A50E-4E4B-86C2-4AE65D6F30BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE9564BB-A50E-4E4B-86C2-4AE65D6F30BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE9564BB-A50E-4E4B-86C2-4AE65D6F30BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE9564BB-A50E-4E4B-86C2-4AE65D6F30BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF312FAE-41A5-4264-A3D5-E147DFB79583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF312FAE-41A5-4264-A3D5-E147DFB79583}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF312FAE-41A5-4264-A3D5-E147DFB79583}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF312FAE-41A5-4264-A3D5-E147DFB79583}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AE9564BB-A50E-4E4B-86C2-4AE65D6F30BF} = {A2B1C4AE-C237-460C-9FDB-6CBEEC67D9A9}
+		{CF312FAE-41A5-4264-A3D5-E147DFB79583} = {A2B1C4AE-C237-460C-9FDB-6CBEEC67D9A9}
+	EndGlobalSection
+EndGlobal
